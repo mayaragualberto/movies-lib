@@ -22,7 +22,7 @@ const Search = () => {
   };
 
   useEffect(() => {
-    const searchWithQueryUrl = `${searchUrl}?api_key=${apiKey}&language=pt-BR&query=${query}`;
+    const searchWithQueryUrl = `${searchUrl}?api_key=${apiKey}&language=pt-BR&query=${query}&language=pt-BR`;
 
     getSearchedMovies(searchWithQueryUrl);
   }, [query]);
